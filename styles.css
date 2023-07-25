@@ -88,7 +88,8 @@ p {
     align-items: center;
     flex-direction: row;
     gap: 25px;
-    padding: 25px 27%;
+    padding: 25px 25%;
+    min-width: 700px;
 }
 
 .texto {
