@@ -5,18 +5,29 @@
     --negro: #070001;
     --rojo: #68462b;
 }
-
+@font-face {
+    font-family: 'scp';
+    src: url(fuentes/SourceCodePro.ttf);
+}
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-family: 'scp', 'Gill Sans';
     background-color: #e9e0d1;
     margin: 0px 0px;
 }
 
-a {
+#encabezado a {
     text-decoration: none;
-    color: var(--verde-oscuro);
+    color: var(--blanco);
 }
-
+.ahover{
+    background-color: var(--blanco);
+    height: 5px;
+    width: auto;
+}
+@keyframes enclink {
+    from {transform: scaleX(0);}
+    to {transform: scaleX(1);}
+}
 a:hover {
     color: var(--blanco);
 }
@@ -91,6 +102,7 @@ p {
 }
 
 #footer {
+    padding-top: 50px;
     height: 300px;
     width: 100%;
     align-items: center;
@@ -109,6 +121,8 @@ p {
 }
 
 .redes a {
+    text-decoration: none;
+    color: var(--verde-oscuro);
     display: grid;
     grid-template-rows: 1fr 1fr;
     align-items: center;
@@ -118,4 +132,35 @@ p {
 
 .redes a:hover {
     color: var(--rojo);
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.redes a:hover img {
+    animation-name: logo;
+    animation-duration: 0.5s;
 }
