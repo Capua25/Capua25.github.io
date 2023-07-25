@@ -5,10 +5,12 @@
     --negro: #070001;
     --rojo: #68462b;
 }
+
 @font-face {
     font-family: 'scp';
     src: url(fuentes/SourceCodePro.ttf);
 }
+
 body {
     font-family: 'scp', 'Gill Sans';
     background-color: #e9e0d1;
@@ -19,17 +21,27 @@ body {
     text-decoration: none;
     color: var(--blanco);
 }
-.ahover{
+
+.ahover {
     background-color: var(--blanco);
-    height: 5px;
+    height: 3px;
     width: auto;
+    border-radius: 2px;
 }
+
 @keyframes enclink {
-    from {transform: scaleX(0);}
-    to {transform: scaleX(1);}
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
 }
-a:hover {
-    color: var(--blanco);
+
+a:hover+.ahover {
+    animation-name: enclink;
+    animation-duration: 0.5s;
 }
 
 h1 {
