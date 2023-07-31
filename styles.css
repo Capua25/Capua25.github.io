@@ -15,6 +15,7 @@ body {
     font-family: 'scp', 'Gill Sans';
     background-color: #e9e0d1;
     margin: 0px 0px;
+    display: block;
 }
 
 #encabezado a {
@@ -25,7 +26,7 @@ body {
 .ahover {
     background-color: var(--blanco);
     height: 3px;
-    width: auto;
+    width: 0px;
     border-radius: 2px;
 }
 
@@ -40,8 +41,8 @@ body {
 }
 
 a:hover+.ahover {
-    animation-name: enclink;
-    animation-duration: 0.5s;
+    width: auto;
+    animation: enclink 0.4s;
 }
 
 h1 {
@@ -55,10 +56,6 @@ h3 {
 
 p {
     font-size: 20px;
-}
-
-#portada p {
-    margin-bottom: 0px;
 }
 
 #encabezado {
@@ -83,6 +80,10 @@ p {
     height: 720px;
 }
 
+#portada p {
+    margin-bottom: 0px;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -90,6 +91,25 @@ p {
     gap: 25px;
     padding: 25px 25%;
     min-width: 700px;
+}
+
+@media (max-width: 720px) {
+    .container {
+        min-width: 600px;
+        width: 100%;
+        flex-direction: column;
+        padding: 25px 10px;
+        gap: 10px;
+    }
+
+    .texto {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
 }
 
 .texto {
