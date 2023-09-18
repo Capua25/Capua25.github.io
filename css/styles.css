@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'scp';
-    src: url(fuentes/SourceCodePro.ttf);
+    src: url(../fuentes/SourceCodePro.ttf);
 }
 
 body {
@@ -16,6 +16,7 @@ body {
     background-color: #e9e0d1;
     margin: 0px 0px;
     display: block;
+    min-width: 600px;
 }
 
 #encabezado a {
@@ -82,7 +83,7 @@ p {
     flex-direction: column;
     margin-top: -100px;
     margin-bottom: 50px;
-    height: 720px;
+    height: auto;
     width: 100%;
 }
 
@@ -90,7 +91,7 @@ p {
     margin-bottom: 0px;
 }
 
-.container {
+.micontainer {
     display: flex;
     align-items: center;
     flex-direction: row;
