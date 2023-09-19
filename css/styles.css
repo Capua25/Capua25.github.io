@@ -82,7 +82,7 @@ p {
     align-items: center;
     flex-direction: column;
     margin-top: -100px;
-    margin-bottom: 50px;
+    margin-bottom: 270px;
     height: auto;
     width: 100%;
 }
@@ -100,7 +100,7 @@ p {
     min-width: 700px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1080px) {
     .container {
         min-width: 600px;
         width: 100%;
@@ -115,6 +115,10 @@ p {
 
     h3 {
         font-size: 20px;
+    }
+
+    #portada{
+        margin-bottom: 50px;
     }
 
 }
@@ -146,7 +150,7 @@ p {
 #footer {
     margin-top: 50px;
     padding-top: 50px;
-    height: 300px;
+    height: 60px;
     width: 100%;
     align-items: center;
     justify-items: center;
