@@ -1,0 +1,17 @@
+:root {
+    --blanco: #e9e0d1;
+    --verde-claro: #91a398;
+    --verde-oscuro: #33605a;
+    --negro: #070001;
+    --rojo: #68462b;
+}
+
+@font-face {
+    font-family: 'scp';
+    src: url(fuentes/SourceCodePro.ttf);
+}
+
+body {
+    all: unset;
+    font-family: 'scp', 'Gill Sans';
+}
