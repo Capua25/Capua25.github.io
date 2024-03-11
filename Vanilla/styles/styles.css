@@ -23,6 +23,7 @@ body {
     background-color: black;
 }
 h1{
+    height: 50px;
 }
 p{
     width: 80%;
