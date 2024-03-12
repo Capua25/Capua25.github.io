@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Boton from '../components/Boton.astro'
+import Boton from '../components/Boton.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="Martín Capuano">
+	<Header label1='About me' label2='Experience' label3='Contact'></Header>
 	<main>
-		<h1><span class="text-gradient">Martín Capuano</span></h1>
-		<Boton text="Push Me"></Boton>
+		<h1><span class="">Martín Capuano</span></h1>
 		<Card title='Mi portfolio' body='Este va a ser mi portfolio' href='#'></Card>
 	</main>
 </Layout>
@@ -31,12 +32,5 @@ import Boton from '../components/Boton.astro'
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
 	}
 </style>
