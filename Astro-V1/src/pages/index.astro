@@ -2,41 +2,32 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Boton from '../components/Boton.astro';
-import Header from '../components/Header.astro';
+import Titular from '../components/Titular.astro';
+import Grid from '../components/Grid.astro';
 ---
 
 <Layout title="Martín Capuano">
-	<Header></Header>
 	<main>
-		<Card title='Mi portfolio' body='Este va a ser mi portfolio' href='#'></Card>
+		<Titular></Titular>
+		<Grid>
+			<Card
+				href='#'
+				title=''
+				body='' 
+			/>
+		</Grid>
 	</main>
 </Layout>
 
 <style>
 	@font-face{
-		font-family: 'Franchise';
-		src: url('../fonts/Franchise.ttf');
-	}
-	@font-face{
-		font-family: 'Franchise-f';
-		src: url('../fonts/FranchiseFilled.ttf');
-	}
-	@font-face{
 		font-family: 'Aristotelica';
 		src: url('../fonts/Aristotelica.ttf');
 	}
-	@font-face{
-		font-family: 'Bronz';
-		src: url('../fonts/Bronz.ttf');
-	}
-	@font-face{
-		font-family: 'Walkaway';
-		src: url('../fonts/Walkway-Black.ttf');
-	}
 	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
+		margin: 0;
+		padding: 0;
+		width: 100svw;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
@@ -44,12 +35,5 @@ import Header from '../components/Header.astro';
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
 	}
 </style>
