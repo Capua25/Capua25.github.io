@@ -44,9 +44,14 @@
         <h1>Martín Capuano</h1>
     </div>
     <div id="links">
-        <a href="#">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Contact</a>
+        <div id="menu">
+            <img src="../img/menu.svg" alt="">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 <style>
@@ -68,14 +73,14 @@
     }
     #nombre h1{
         all: unset;
-        font-family: 'Walkaway';
+        font-family: 'Aristotelica';
         font-size: 5rem;
     }
     #links {
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: end;
     }
     #links a{
         margin: 10px;
