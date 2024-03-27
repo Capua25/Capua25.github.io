@@ -6,14 +6,37 @@ import Header from '../components/Header.astro';
 ---
 
 <Layout title="Martín Capuano">
-	<Header label1='About me' label2='Experience' label3='Contact'></Header>
+	<Header></Header>
 	<main>
-		<h1><span class="">Martín Capuano</span></h1>
 		<Card title='Mi portfolio' body='Este va a ser mi portfolio' href='#'></Card>
 	</main>
 </Layout>
 
 <style>
+	@font-face{
+		font-family: 'Franchise';
+		src: url('../fonts/Franchise.ttf');
+	}
+	@font-face{
+		font-family: 'Franchise-f';
+		src: url('../fonts/FranchiseFilled.ttf');
+	}
+	@font-face{
+		font-family: 'W-R';
+		src: url('../fonts/whitrabt.ttf');
+	}
+	@font-face{
+		font-family: 'Aristotelica';
+		src: url('../fonts/Aristotelica.ttf');
+	}
+	@font-face{
+		font-family: 'Bronz';
+		src: url('../fonts/Bronz.ttf');
+	}
+	@font-face{
+		font-family: 'Walkaway';
+		src: url('../fonts/Walkaway-Black.ttf');
+	}
 	main {
 		margin: auto;
 		padding: 1rem;
