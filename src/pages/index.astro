@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import LinkCard from "../components/LinkCard.astro";
 import Titular from "../components/Titular.astro";
 import Grid from "../components/Grid.astro";
 ---
@@ -9,15 +10,15 @@ import Grid from "../components/Grid.astro";
 	<main>
 		<Titular />
 		<Grid>
-			<Card title="About Me">
+			<LinkCard title="About Me" link="/about">
 				<p>
 					I consider myself as a person with wide knowledge about technology and a fast learner. I'm also good at logical-mathematical thinking. I am currently focused on programming, aiming to live from it, wich is my main goal. Now I’m working at Eurogen S.R.L. as software developer and IT consultant and manager.
 				</p>
-			</Card>
-			<Card title="Experience">
+			</LinkCard>
+			<LinkCard title="Experience" link="/experience">
 				<p>I work as a part-time freelancer web developer and I've made a couple of pages including <a href="https://sonorapodcast.uy/" target="_blank">Sonora Podcast</a>, <a href="https://uycast.com/" target="_blank">UyCast</a> and a fullstack <a href="https://github.com/capua25/NewTetris" target="_blank">tetris app</a>.</p>
 				<p>Besides that, I work full-time as software developer at Eurogen S.R.L. using <a href="https://windev.com/" target="_blank">Windev</a> to give maintenance and develop new feautres for their managment software.</p>
-			</Card>
+			</LinkCard>
 			<Card title="Interests">
 				<div id="interest-icons"
 				style="
@@ -80,7 +81,7 @@ import Grid from "../components/Grid.astro";
 			</Card>
 			<Card title="Social Media">
 				<div id="social">
-					<a href="http://" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 20 20" fill="none" height="120px" width="120px">
+					<a href="https://github.com/capua25" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 20 20" fill="none" height="120px" width="120px">
 						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
 						<g id="SVGRepo_iconCarrier">
@@ -97,7 +98,7 @@ import Grid from "../components/Grid.astro";
 						</g>
 						<span>GitHub</span>
 					</svg></a>
-					<a href="http://" target="_blank" rel="noopener noreferrer"><svg fill="#ffffff" viewBox="-2 5 24 24" stroke="#ffffff" height="120px" width="120px">
+					<a href="https://www.linkedin.com/in/mart%C3%ADn-capuano-barcena-24b896224/" target="_blank" rel="noopener noreferrer"><svg fill="#ffffff" viewBox="-2 5 24 24" stroke="#ffffff" height="120px" width="120px">
 						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
 						<g id="SVGRepo_iconCarrier">
@@ -107,7 +108,7 @@ import Grid from "../components/Grid.astro";
 						</g>
 						<span>LinkedIn</span>
 					</svg></a>
-					<a href="http://" target="_blank" rel="noopener noreferrer"><svg viewBox="-0.5 0 20 20" fill="#000000" height="120px" width="120px">
+					<a href="https://www.twitch.tv/laculobaza" target="_blank" rel="noopener noreferrer"><svg viewBox="-0.5 0 20 20" fill="#000000" height="120px" width="120px">
 						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
 						<g id="SVGRepo_iconCarrier">
