@@ -1,4 +1,65 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import Grid from "../components/Grid.astro";
 ---
+
+<Layout title="My Experience">
+    <main>
+        <h1>My experience</h1>
+        <p>I work as a part-time freelancer web developer and I've made a couple of pages including <a href="https://sonorapodcast.uy/" target="_blank">Sonora Podcast</a>, <a href="https://uycast.com/" target="_blank">UyCast</a> and a fullstack <a href="https://github.com/capua25/NewTetris" target="_blank">tetris app</a>.</p>
+        <p>Besides that, I work full-time as software developer at Eurogen S.R.L. using <a href="https://windev.com/" target="_blank">Windev</a> to give maintenance and develop new feautres for their management software.</p>
+        <Grid>
+            <Card title="Current Job">
+                <p>
+                    My actual job is as software developer at <a href="https://eurogen.com.uy/">Eurogen</a> and <a href="https://rusticohogar.com.uy/">Rustico</a> where I use an integrated DevOps platform called <a href="https://windev.com/" target="_blank">Windev</a>.
+                    I develop new features on demand and I give maintenance to their management and billing software. Along with this I manage the server and database used, and I give IT consulting.
+                </p>
+                <img src="../img/windev-logo.png" alt="">
+            </Card>
+            <Card title="Sonora Podcast"></Card>
+            <Card title="UyCast"></Card>
+            <Card title="Tetris App"></Card>
+        </Grid>
+    </main>
+</Layout>
+<style>
+    @font-face {
+		font-family: "Aristotelica";
+		src: url("../fonts/Aristotelica.ttf");
+	}
+	@font-face {
+		font-family: "VCR";
+		src: url("../fonts/VCR.ttf");
+	}
+    main {
+		margin: 0;
+		padding: 0;
+        padding-top: 10vh;
+		width: 100svw;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.4;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-sizing: border-box;
+	}
+    main>p{
+        max-width: 1000px;
+        text-align: center;
+    }
+	p>a{
+		all: unset;
+		cursor: pointer;
+		color: white;
+		padding: 2px;
+	}
+	p>a:hover{
+		background-color: white;
+		border-radius: 5px;
+		padding: 2px;
+		color: black;
+	}
+</style>

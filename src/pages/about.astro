@@ -2,3 +2,44 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 ---
+
+<Layout title="About Me">
+    <main>
+
+    </main>
+</Layout>
+<style>
+    @font-face {
+		font-family: "Aristotelica";
+		src: url("../fonts/Aristotelica.ttf");
+	}
+	@font-face {
+		font-family: "VCR";
+		src: url("../fonts/VCR.ttf");
+	}
+    main {
+		margin: 0;
+		padding: 0;
+		width: 100svw;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.4;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-sizing: border-box;
+	}
+	p>a{
+		all: unset;
+		cursor: pointer;
+		color: white;
+		padding: 2px;
+	}
+	p>a:hover{
+		background-color: white;
+		border-radius: 5px;
+		padding: 2px;
+		color: black;
+	}
+</style>
