@@ -78,16 +78,6 @@ import Grid from "../components/Grid.astro";
 					</div>
 				</div>
 			</Card>
-			<Card title="Skills">
-				<ul>
-					<li>Quick learning in any area and complete willingness to learn</li>
-					<li>Ease of technology in general and the use of digital tools</li>
-					<li>Good command of English at an advanced intermediate level (B<span>2</span>+)</li>
-					<li>My main programming knowledge is Javascript, Python and C. I have also programmed microprocessors with Assembler</li>
-					<li>Ease in logical-mathematical thinking</li>
-					<li>Knowledge of engineering calculus</li>
-				</ul>
-			</Card>
 			<Card title="Social Media">
 				<div id="social">
 					<a href="http://" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 20 20" fill="none" height="120px" width="120px">
@@ -136,6 +126,16 @@ import Grid from "../components/Grid.astro";
 					</svg></a>
 				</div>
 			</Card>
+			<Card title="Skills">
+				<ul>
+					<li>Quick learning in any area and complete willingness to learn</li>
+					<li>Ease of technology in general and the use of digital tools</li>
+					<li>Good command of English at an advanced intermediate level (B<span>2</span>+)</li>
+					<li>My main programming knowledge is Javascript, Python and C. I have also programmed microprocessors with Assembler</li>
+					<li>Ease in logical-mathematical thinking</li>
+					<li>Knowledge of engineering calculus</li>
+				</ul>
+			</Card>
 		</Grid>
 	</main>
 </Layout>
@@ -171,11 +171,13 @@ import Grid from "../components/Grid.astro";
 		gap: 25px;
 	}
 	#social{
+		margin-top: 25px;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: 10px;
+		gap: 25px;
+		width: 75%;
 	}
 	.icon{
 		width: 120px;
@@ -215,6 +217,7 @@ import Grid from "../components/Grid.astro";
 		align-items: center;
 	}
 	a span{
+		margin-top: 10px;
 		padding: 2px;
 	}
 	a:hover span{
