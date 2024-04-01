@@ -7,18 +7,32 @@ import Grid from "../components/Grid.astro";
 <Layout title="My Experience">
     <main>
         <h1>My experience</h1>
-        <p>I work as a part-time freelancer web developer and I've made a couple of pages including <a href="https://sonorapodcast.uy/" target="_blank">Sonora Podcast</a>, <a href="https://uycast.com/" target="_blank">UyCast</a> and a fullstack <a href="https://github.com/capua25/NewTetris" target="_blank">tetris app</a>.</p>
-        <p>Besides that, I work full-time as software developer at Eurogen S.R.L. using <a href="https://windev.com/" target="_blank">Windev</a> to give maintenance and develop new feautres for their management software.</p>
+        <p>I work as a part-time freelancer web developer and I've made a couple of pages including <a href="https://sonorapodcast.uy/" target="_blank">Sonora Podcast</a>, <a href="https://uycast.com/" target="_blank">UyCast</a> and a fullstack <a href="https://github.com/capua25/NewTetris" target="_blank">tetris app</a>. Besides that, I work full-time as software developer at Eurogen S.R.L. using <a href="https://windev.com/" target="_blank">Windev</a> to give maintenance and develop new feautres for their management software.</p>
         <Grid>
             <Card title="Current Job">
-                <p>
-                    My actual job is as software developer at <a href="https://eurogen.com.uy/">Eurogen</a> and <a href="https://rusticohogar.com.uy/">Rustico</a> where I use an integrated DevOps platform called <a href="https://windev.com/" target="_blank">Windev</a>.
-                    I develop new features on demand and I give maintenance to their management and billing software. Along with this I manage the server and database used, and I give IT consulting.
-                </p>
+				<div id="current-job">
+					<p>
+						My actual job is as software developer at <a href="https://eurogen.com.uy/">Eurogen</a> and <a href="https://rusticohogar.com.uy/">Rustico</a> where I use an integrated DevOps platform called <a href="https://windev.com/" target="_blank">Windev</a>.
+						I develop new features on demand and I give maintenance to their management and billing software. Along with this I manage the server and database used, and I give IT consulting.
+					</p>
+					<img src="/src/img/windev-logo.png" alt="Windev Logo">
+				</div>
             </Card>
-            <Card title="Sonora Podcast"></Card>
-            <Card title="UyCast"></Card>
-            <Card title="Tetris App"></Card>
+            <Card title="Sonora Podcast">
+				<p>This is a static site for a podcasting event made entirely with vanilla HTML, CSS and Javascript.</p>
+				<img src="/src/img/sonora1.png" class="card-img" alt="Screenshot">
+				<img src="/src/img/sonora2.png" class="card-img" alt="Screenshot">
+				<img src="/src/img/sonora3.png" class="card-img" alt="Screenshot">
+				<p>You can see this page at <a href="http://sonorapodcast.uy" target="_blank" rel="noopener noreferrer">sonorapodcast.uy</a></p>
+			</Card>
+            <Card title="UyCast">
+				<p>This is actually under construction and it will be a static page for a radio station.</p>
+			</Card>
+            <Card title="Tetris App">
+				<p>This web application is the classic Tetris game (made by me in Javascript) and a simple application for login and a database to save scores and see the ones from other players.</p>
+				<img src="/src/img/sonora3.png" class="card-img" alt="Screenshot">
+				<img src="/src/img/sonora3.png" class="card-img" alt="Screenshot">
+			</Card>
         </Grid>
     </main>
 </Layout>
@@ -46,7 +60,7 @@ import Grid from "../components/Grid.astro";
 		box-sizing: border-box;
 	}
     main>p{
-        max-width: 1000px;
+        max-width: 800px;
         text-align: center;
     }
 	p>a{
@@ -60,5 +74,23 @@ import Grid from "../components/Grid.astro";
 		border-radius: 5px;
 		padding: 2px;
 		color: black;
+	}
+	#current-job{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	#current-job img{
+		height: 80%;
+	}
+	#current-job p{
+		width: 60%;
+	}
+	.card-img{
+		width: 80%;
+		margin: 10px;
+		border-radius: 10px;
 	}
 </style>
